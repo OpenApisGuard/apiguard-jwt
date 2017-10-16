@@ -41,13 +41,13 @@ public class JwtServiceTest {
         Assert.assertTrue(verify);
     }
 
-    @Test
-    public void testJwtVerify2() throws Exception {
-        String secret = "0ce5f35e-a9b9-4717-93bd-4d3daa6b60d3";
-        String jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlzcyI6IjdjZWIxNWM3LTdlNjktNDA5NC05NWU2LTk3M2UxM2I0YWY1NiJ9.0E-LJ3DSo1wvNvxq9NkK7IouUn2SA8ck-Xnn_PPTj5g";
-        boolean verify = service.verify(jwt, secret);
-        Assert.assertTrue(verify);
-    }
+//    @Test
+//    public void testJwtVerify2() throws Exception {
+//        String secret = "0ce5f35e-a9b9-4717-93bd-4d3daa6b60d3";
+//        String jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlzcyI6IjdjZWIxNWM3LTdlNjktNDA5NC05NWU2LTk3M2UxM2I0YWY1NiJ9.0E-LJ3DSo1wvNvxq9NkK7IouUn2SA8ck-Xnn_PPTj5g";
+//        boolean verify = service.verify(jwt, secret);
+//        Assert.assertTrue(verify);
+//    }
 
     @Test
     public void testJwtVerifySecretNull() throws Exception {
